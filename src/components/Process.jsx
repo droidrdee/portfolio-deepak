@@ -1,104 +1,133 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaSearch, FaCode, FaRocket } from 'react-icons/fa';
+import { HiBeaker, HiChartBar } from 'react-icons/hi2';
 
 const Process = () => {
     const steps = [
-        { icon: <FaSearch />, title: 'Discovery', desc: 'Understanding your needs & goals.' },
-        { icon: <FaCode />, title: 'Build', desc: 'Developing with clean, scalable code.' },
-        { icon: <FaRocket />, title: 'Launch', desc: 'Deploying & optimizing for growth.' },
+        {
+            icon: <FaSearch />,
+            num: '01',
+            title: 'Discovery',
+            desc: 'Map the real bottleneck — not the symptom. Profile, benchmark, define success metrics before a single line ships.',
+        },
+        {
+            icon: <HiBeaker />,
+            num: '02',
+            title: 'Prototype',
+            desc: 'Smallest working slice. Evaluate retrieval (MRR / NDCG), validate latency, sanity-check the LLM output.',
+        },
+        {
+            icon: <FaCode />,
+            num: '03',
+            title: 'Engineer',
+            desc: 'Production-grade build — async I/O, structured logging, type-safe APIs, and reproducible deployments.',
+        },
+        {
+            icon: <HiChartBar />,
+            num: '04',
+            title: 'Evaluate',
+            desc: 'Measurable wins only. Before/after profiling, latency percentiles, retrieval quality, user-capacity tests.',
+        },
+        {
+            icon: <FaRocket />,
+            num: '05',
+            title: 'Ship',
+            desc: 'Deploy on Vertex AI / AWS Bedrock / Docker. Monitor in prod, iterate based on real usage.',
+        },
     ];
 
     return (
         <motion.div
             className="bento-item col-span-2 process-cell"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.45 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ delay: 0.15 }}
         >
-            <h3>My Workflow</h3>
+            <div className="section-label">how i work · repeatable</div>
+            <h3 className="bento-heading">My Workflow</h3>
+
             <div className="process-steps">
                 {steps.map((step, i) => (
                     <div key={i} className="step-item">
-                        <div className="step-icon">{step.icon}</div>
+                        <div className="step-rail">
+                            <div className="step-icon">{step.icon}</div>
+                            {i !== steps.length - 1 && <div className="step-line" />}
+                        </div>
                         <div className="step-info">
-                            <h4>{step.title}</h4>
+                            <div className="step-row">
+                                <span className="step-num">{step.num}</span>
+                                <h4>{step.title}</h4>
+                            </div>
                             <p>{step.desc}</p>
                         </div>
-                        {i !== steps.length - 1 && <div className="step-line"></div>}
                     </div>
                 ))}
             </div>
 
             <style>{`
-        .process-cell h3 {
-          margin-bottom: 20px;
-          font-size: 1.2rem;
-        }
         .process-steps {
           display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          position: relative;
+          flex-direction: column;
+          gap: 4px;
         }
         .step-item {
+          display: grid;
+          grid-template-columns: 36px 1fr;
+          gap: 14px;
+          padding-bottom: 14px;
+        }
+        .step-item:last-child { padding-bottom: 0; }
+        .step-rail {
           display: flex;
           flex-direction: column;
           align-items: center;
-          text-align: center;
-          flex: 1;
-          position: relative;
-          z-index: 1;
         }
         .step-icon {
-          width: 50px;
-          height: 50px;
-          background: rgba(255,255,255,0.05);
-          border-radius: 50%;
+          width: 32px;
+          height: 32px;
+          background: rgba(139, 92, 246, 0.12);
+          border-radius: 9px;
           display: flex;
           align-items: center;
           justify-content: center;
-          color: var(--accent);
-          font-size: 1.2rem;
-          margin-bottom: 10px;
-          border: 1px solid rgba(255,255,255,0.1);
-        }
-        .step-info h4 {
-          font-size: 0.95rem;
-          margin-bottom: 5px;
-        }
-        .step-info p {
-          font-size: 0.8rem;
-          color: var(--text-muted);
-          line-height: 1.3;
-          max-width: 120px;
+          color: #c4b5fd;
+          font-size: 0.85rem;
+          border: 1px solid rgba(139, 92, 246, 0.22);
+          flex-shrink: 0;
         }
         .step-line {
-          position: absolute;
-          top: 25px;
-          right: -50%;
-          width: 100%;
-          height: 2px;
-          background: rgba(255,255,255,0.1);
-          z-index: -1;
+          flex: 1;
+          width: 2px;
+          background: linear-gradient(to bottom, rgba(139, 92, 246, 0.25), rgba(255, 255, 255, 0.03));
+          margin-top: 6px;
+          min-height: 18px;
         }
-        @media (max-width: 640px) {
-          .process-steps {
-            flex-direction: column;
-            gap: 20px;
-          }
-          .step-item {
-            flex-direction: row;
-            text-align: left;
-            gap: 15px;
-            width: 100%;
-          }
-          .step-line {
-            display: none;
-          }
-          .step-info p {
-            max-width: none;
-          }
+        .step-info {
+          padding-top: 4px;
+        }
+        .step-row {
+          display: flex;
+          align-items: baseline;
+          gap: 10px;
+          margin-bottom: 4px;
+        }
+        .step-num {
+          font-family: var(--font-mono);
+          font-size: 0.7rem;
+          color: var(--text-dim);
+          letter-spacing: 0.04em;
+        }
+        .step-info h4 {
+          font-size: 0.97rem;
+          color: white;
+          letter-spacing: -0.01em;
+        }
+        .step-info p {
+          font-size: 0.82rem;
+          color: var(--text-muted);
+          line-height: 1.55;
         }
       `}</style>
         </motion.div>
