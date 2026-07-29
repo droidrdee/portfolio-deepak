@@ -21,7 +21,7 @@ const Education = () => {
             <FaUniversity />
           </div>
           <div className="edu-meta">
-            <div className="degree">B.E. — Computer Science &amp; Engineering</div>
+            <div className="degree">B.Tech — Computer Science &amp; Engineering</div>
             <div className="uni-name">Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)</div>
             <div className="uni-loc">Bhopal, India</div>
           </div>
@@ -34,7 +34,7 @@ const Education = () => {
           </div>
           <div className="grad-divider" />
           <div className="grad-stat">
-            <span className="stat-num text-gradient">Mar 2025</span>
+            <span className="stat-num text-gradient">2021 – 2025</span>
             <span className="stat-label">Graduated</span>
           </div>
         </div>
@@ -44,7 +44,7 @@ const Education = () => {
         <HiAcademicCap className="ci-ico" />
         <div>
           <div className="ci-title">Continuous learner</div>
-          <div className="ci-sub">QLoRA fine-tuning · LLM evaluation (MRR@10, NDCG@10) · multi-agent orchestration</div>
+          <div className="ci-sub">Machine Learning Fundamentals · DBMS · Data Structures &amp; Algorithms</div>
         </div>
       </div>
 

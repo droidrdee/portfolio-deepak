@@ -7,56 +7,61 @@ const Experience = () => {
   const roles = [
     {
       company: 'Softude Infotech Pvt. Ltd.',
-      role: 'AI/ML Engineer',
+      role: 'AI Engineer',
       period: 'Jun 2025 — Present',
       location: 'Indore, India',
       isCurrent: true,
-      tags: ['LLM', 'RAG', 'Agentic AI', 'Async I/O', 'Vertex AI', 'LLMOps'],
+      tags: ['RAG', 'Agentic AI', 'LangChain', 'LangGraph', 'FastAPI', 'Async I/O'],
       bullets: [
         {
-          headline: 'Architected a production LLM-driven conversational automation system for DCGPAC',
+          headline: 'Built a production RAG procurement chatbot for DCGPAC',
           detail:
-            'Integrated intent classification, RAG-based context retrieval, and multi-turn dialogue management to automate purchase orders, approval workflows, inventory queries, and vendor communication through a single chatbot interface — eliminating manual touchpoints across 3 enterprise workflows.',
+            'Used LangChain, MiniLM dense retrieval, and GPT-4 to support 500–1,000 purchase orders daily and automate 100–500 CRM emails weekly across 3 enterprise workflows.',
         },
         {
-          headline: 'Built event-driven workflow automation pipelines for procurement and logistics',
+          headline: 'Developed an autonomous ReAct sales intelligence agent for DCGPAC',
           detail:
-            'Implemented webhooks, async task schedulers, and background workers that compressed multi-step operational processes from hours to under 5 minutes, removing human bottlenecks across procurement, logistics coordination, and document routing.',
+            'Monitored live web signals for the top 50 clients and routed personalized alerts, helping secure 50% of orders in advance with upfront payment.',
         },
         {
-          headline: 'Developed a Maritime OCR Intelligence System for shipping and regulatory PDFs',
+          headline: 'Built an end-to-end OCR and classification pipeline for Medico Healthcare',
           detail:
-            'Processed port circulars, shipping notices, and regulatory PDFs through a multi-stage NLP workflow using PyMuPDF, Tesseract OCR, transformer-based re-ranking, and keyword scoring to surface profit-impacting insights that previously required hours of manual analyst review.',
+            'Processed 500+ patient records monthly into PostgreSQL, reducing manual patient-record retrieval time by 90% for hospital staff.',
         },
         {
-          headline: 'Resolved critical performance issues in the flagship Cost Estimation Platform',
+          headline: 'Re-engineered a bulk upload pipeline for Havells, Hero, and TVS',
           detail:
-            'Served Havells, TVS, and Hero by eliminating memory leaks, restructuring N+1 queries into optimized joins, and migrating the data-access layer to a fully async/await architecture — delivering a 90% overall performance improvement.',
+            'Cut 10,000-record processing time from 10–15 minutes to under 30 seconds using async I/O and connection pooling — a 97% reduction.',
         },
         {
-          headline: 'Scaled the platform to support 25–30+ concurrent users per client',
+          headline: 'Built a maritime document intelligence pipeline for regulatory documents',
           detail:
-            'Reduced peak API response time by 70% through systematic profiling, connection pooling, and async I/O refactoring across the backend stack.',
+            'Used OCR, PDF parsing, and FlashRank cross-encoder reranking to cut analyst review time from 3+ hours to under 15 minutes per batch — a 90% reduction.',
         },
       ],
     },
     {
       company: 'RA Software',
-      role: 'Backend Developer Intern',
-      period: 'Feb 2024 — Aug 2024',
+      role: 'Python AI Engineer',
+      period: 'Mar 2024 — May 2025',
       location: 'Jaipur, India · Remote',
       isCurrent: false,
-      tags: ['REST APIs', 'PostgreSQL', 'CI/CD', 'Agile'],
+      tags: ['LangChain', 'PostgreSQL', 'Pydantic', 'Celery', 'Redis', 'REST APIs'],
       bullets: [
         {
-          headline: 'Built and maintained RESTful APIs powering 10,000+ daily transactions',
+          headline: 'Engineered an enterprise HR assistant using LangChain and semantic caching',
           detail:
-            'Improved response consistency across 5+ endpoints. Designed normalised database schemas and optimised query logic via index tuning and query batching.',
+            'Built with ChromaDB and cosine-similarity thresholding to slash API costs by ~40% and latency by 65% while enforcing Pydantic validation to eliminate hallucinations.',
         },
         {
-          headline: 'Contributed to full Agile sprint cycles',
+          headline: 'Designed and scaled high-throughput Django REST APIs',
           detail:
-            'Owned sprint planning, code reviews, and CI/CD pipeline maintenance — gaining hands-on production debugging and deployment experience.',
+            'Managed onboarding, attendance, and payroll modules while optimizing PostgreSQL queries and indexing to reduce end-to-end API response times by 30%.',
+        },
+        {
+          headline: 'Architected an asynchronous data worker pipeline',
+          detail:
+            'Used Celery and Redis to handle heavy text-based performance review data ingestion and automated classification, removing processing bottlenecks.',
         },
       ],
     },

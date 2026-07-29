@@ -27,11 +27,11 @@ const Hero = () => {
         </h1>
 
         <p className="hero-sub">
-          I'm <strong>Deepak Rathore</strong> — an <strong>AI/ML Engineer</strong> building
-          <span className="inline-chip"><HiSparkles /> RAG pipelines</span>,
-          <span className="inline-chip"><HiSparkles /> LLM copilots</span>, and
-          <span className="inline-chip"><HiSparkles /> async enterprise backends</span>
-          that improve automation, search, and workflow efficiency for clients like <strong>Havells</strong>, <strong>TVS</strong>, and <strong>Hero</strong>. Currently delivering production-grade AI solutions at <strong>Softude Infotech</strong>.
+          I'm <strong>Deepak Rathore</strong> — an <strong>AI Engineer</strong> with 2+ years of production experience building
+          <span className="inline-chip"><HiSparkles /> GenAI apps</span>,
+          <span className="inline-chip"><HiSparkles /> RAG pipelines</span>, and
+          <span className="inline-chip"><HiSparkles /> agentic workflows</span>
+          across procurement, logistics, healthcare, and HR domains. I’ve delivered measurable impact through faster document processing, lower API costs, and enterprise automation.
         </p>
 
         <div className="hero-stats">
@@ -55,7 +55,7 @@ const Hero = () => {
           <a href="#contact" className="cta-btn primary">
             Let's build something <FaArrowRight />
           </a>
-          <a href="/DEEPAK%20RATHORE%20--%20RESUME-1.pdf" className="cta-btn ghost" download>
+          <a href="/Deepak_Rathore_AI_Engineer.pdf" className="cta-btn ghost" download>
             <FaDownload /> Resume
           </a>
         </div>
