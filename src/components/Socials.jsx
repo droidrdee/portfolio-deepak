@@ -25,9 +25,9 @@ const Socials = () => {
     },
     {
       icon: <FaEnvelope />,
-      url: 'mailto:deepakrathore62@outlook.com',
+      url: 'mailto:deepakrathore1033@gmail.com',
       label: 'Email',
-      handle: 'deepakrathore62@outlook.com',
+      handle: 'deepakrathore1033@gmail.com',
       meta: 'Primary · responds in 24h',
       accent: 'pink',
       external: false,

@@ -12,14 +12,14 @@ const ProfileImage = () => {
     >
       <img
         src="/profile.png"
-        alt="Deepak Rathore — AI GenAI Engineer"
+        alt="Deepak Rathore — AI Engineer"
         className="profile-img"
       />
       <div className="img-gradient" />
 
       <div className="img-top">
         <div className="role-stack">
-          <span className="role-tag">AI GenAI Engineer</span>
+          <span className="role-tag">AI Engineer</span>
         </div>
       </div>
 

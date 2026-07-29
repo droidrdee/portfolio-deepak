@@ -58,7 +58,62 @@ function App() {
           featured
         />
 
-        {/* Row 7 — Two project cards */}
+        {/* Row 7 — Resume project cards */}
+        <ProjectCard
+          title="OMNIMIND"
+          tagline="Agentic AI Research Platform"
+          desc="Built a multi-agent research platform with three execution paths — RAG, web-search ReAct, and direct reasoning — unified under an intelligent query router using confidence scoring for sub-second routing decisions."
+          highlights={[
+            'Model Context Protocol (MCP) integration for tool-augmented agents',
+            'Three execution paths with dynamic routing between retrieval, web search, and direct reasoning',
+            'FastAPI + Streamlit experience for a full-stack research workflow',
+          ]}
+          tags={['Python', 'LangChain', 'LlamaIndex', 'LangGraph', 'MCP', 'FastAPI']}
+          accent="violet"
+          badge="Featured · Resume Project"
+          year="2026"
+          metric={{ value: '3 paths', label: 'agent execution modes' }}
+          github="https://github.com/droidrdee"
+          delay={0.1}
+          colSpan={2}
+        />
+
+        <ProjectCard
+          title="Voice AI Receptionist Backend"
+          tagline="Dental Appointment Booking Agent"
+          desc="Built a multi-service backend for a voice AI receptionist that handled webhook-driven multi-turn conversation state across calls, with real Google Calendar booking and Twilio SMS confirmations."
+          highlights={[
+            'Webhook-driven multi-turn call flow with persistent conversation state',
+            'Real calendar booking integration via Google Calendar API',
+            'Twilio SMS confirmations, Firestore logging, and an admin REST API',
+          ]}
+          tags={['Python', 'VAPI', 'Twilio', 'Google Calendar', 'Firestore', 'Railway']}
+          accent="cyan"
+          badge="Live · Voice AI"
+          year="2025"
+          metric={{ value: 'Live URL', label: 'publicly reachable' }}
+          delay={0.15}
+          colSpan={2}
+        />
+
+        <ProjectCard
+          title="ForgeOps"
+          tagline="Multi-Agent Engineering Intelligence Platform"
+          desc="Built a multi-agent engineering intelligence platform with MCP servers for repo, test-execution, and codebase-RAG tools, plus a PR review system combining CrewAI and AutoGen."
+          highlights={[
+            'Three MCP servers exposing repo, test-execution, and codebase-RAG tools',
+            'Sequential CrewAI pipeline with an AutoGen adversarial critique loop',
+            'Full-stack review dashboard with JWT/RBAC access control',
+          ]}
+          tags={['CrewAI', 'AutoGen', 'MCP', 'Claude API', 'Next.js', 'Django']}
+          accent="pink"
+          badge="Multi-Agent · Full Stack"
+          year="2025"
+          metric={{ value: 'PR review', label: 'agentic workflow' }}
+          delay={0.2}
+          colSpan={2}
+        />
+
         <ProjectCard
           title="DCGPAC Conversational Automation"
           tagline="Enterprise Procurement & Approval Chatbot"
@@ -69,29 +124,11 @@ function App() {
             'Compressed multi-step operations from hours to under 5 minutes',
           ]}
           tags={['LLM', 'RAG', 'FastAPI', 'Async', 'Enterprise']}
-          accent="cyan"
+          accent="violet"
           badge="Production · Softude × DCGPAC"
           year="2025"
           metric={{ value: '<5 min', label: 'workflow turnaround' }}
-          delay={0.1}
-          colSpan={2}
-        />
-
-        <ProjectCard
-          title="Maritime OCR Intelligence"
-          tagline="Document AI for Shipping & Regulatory PDFs"
-          desc="A multi-stage NLP pipeline that ingests port circulars, shipping notices, and regulatory PDFs — automatically surfacing profit-impacting insights that previously required hours of manual analyst review."
-          highlights={[
-            'PyMuPDF + Tesseract OCR with intelligent fallback routing',
-            'Transformer-based re-ranking + keyword scoring for relevance',
-            'Profit-impacting insights surfaced automatically per document',
-          ]}
-          tags={['OCR', 'NLP', 'Transformers', 'PyMuPDF', 'Tesseract']}
-          accent="pink"
-          badge="Production · Softude"
-          year="2025"
-          metric={{ value: 'Hours → Seconds', label: 'analyst review' }}
-          delay={0.15}
+          delay={0.25}
           colSpan={2}
         />
 
@@ -137,7 +174,7 @@ function App() {
         <div className="footer-row">
           <span className="footer-name">Deepak Rathore</span>
           <span className="footer-dot">•</span>
-          <span>AI GenAI Engineer</span>
+          <span>AI Engineer</span>
           <span className="footer-dot">•</span>
           <span>Indore, India</span>
         </div>

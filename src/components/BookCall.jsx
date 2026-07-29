@@ -21,7 +21,7 @@ const BookCall = () => {
                         We map the path from idea → production in one focused call.
                     </p>
                 </div>
-                <a href="mailto:deepakrathore62@outlook.com?subject=Discovery%20Call%20Request" className="book-btn">
+                <a href="mailto:deepakrathore1033@gmail.com?subject=Discovery%20Call%20Request" className="book-btn">
                     Schedule a call <FaArrowRight />
                 </a>
             </div>

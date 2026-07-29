@@ -27,11 +27,11 @@ const Contact = () => {
           </p>
 
           <div className="channels">
-            <a href="mailto:deepakrathore62@outlook.com" className="channel">
+            <a href="mailto:deepakrathore1033@gmail.com" className="channel">
               <div className="ch-ico violet"><FaEnvelope /></div>
               <div className="ch-info">
                 <span className="ch-label">Email</span>
-                <span className="ch-value">deepakrathore62@outlook.com</span>
+                <span className="ch-value">deepakrathore1033@gmail.com</span>
               </div>
             </a>
             <a href="tel:+919977032423" className="channel">
@@ -61,7 +61,7 @@ const Contact = () => {
               const body = encodeURIComponent(
                 `Hi Deepak,\n\n${data.get('message') || ''}\n\n— ${data.get('name') || ''}\n${data.get('email') || ''}`
               );
-              window.location.href = `mailto:deepakrathore62@outlook.com?subject=${subject}&body=${body}`;
+              window.location.href = `mailto:deepakrathore1033@gmail.com?subject=${subject}&body=${body}`;
             }}
           >
             <div className="form-row">
@@ -78,7 +78,7 @@ const Contact = () => {
               Send message <FaPaperPlane />
             </button>
             <p className="form-fineprint">
-              Or just hit <a href="mailto:deepakrathore62@outlook.com">deepakrathore62@outlook.com</a> — same inbox.
+              Or just hit <a href="mailto:deepakrathore1033@gmail.com">deepakrathore1033@gmail.com</a> — same inbox.
             </p>
           </form>
         </div>
