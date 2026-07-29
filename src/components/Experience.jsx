@@ -7,36 +7,36 @@ const Experience = () => {
   const roles = [
     {
       company: 'Softude Infotech Pvt. Ltd.',
-      role: 'AI GenAI Engineer',
+      role: 'AI/ML Engineer',
       period: 'Jun 2025 — Present',
       location: 'Indore, India',
       isCurrent: true,
-      tags: ['LLM', 'RAG', 'Agentic AI', 'Async I/O', 'LLMOps'],
+      tags: ['LLM', 'RAG', 'Agentic AI', 'Async I/O', 'Vertex AI', 'LLMOps'],
       bullets: [
         {
-          headline: 'Architected an LLM-driven conversational automation system for DCGPAC',
+          headline: 'Architected a production LLM-driven conversational automation system for DCGPAC',
           detail:
             'Integrated intent classification, RAG-based context retrieval, and multi-turn dialogue management to automate purchase orders, approval workflows, inventory queries, and vendor communication through a single chatbot interface — eliminating manual touchpoints across 3 enterprise workflows.',
         },
         {
-          headline: 'Engineered event-driven workflow automation pipelines',
+          headline: 'Built event-driven workflow automation pipelines for procurement and logistics',
           detail:
-            'Built webhooks, async task schedulers, and background workers that compressed multi-step operational processes from hours to under 5 minutes, removing human bottlenecks across procurement, logistics coordination, and document routing.',
+            'Implemented webhooks, async task schedulers, and background workers that compressed multi-step operational processes from hours to under 5 minutes, removing human bottlenecks across procurement, logistics coordination, and document routing.',
         },
         {
-          headline: 'Built a Maritime OCR Intelligence System for shipping & regulatory PDFs',
+          headline: 'Developed a Maritime OCR Intelligence System for shipping and regulatory PDFs',
           detail:
-            'Processed port circulars, shipping notices, and regulatory PDFs through a multi-stage NLP pipeline — PyMuPDF + Tesseract + Transformer re-ranking + keyword scoring — to automatically surface profit-impacting insights that previously required hours of manual analyst review.',
+            'Processed port circulars, shipping notices, and regulatory PDFs through a multi-stage NLP workflow using PyMuPDF, Tesseract OCR, transformer-based re-ranking, and keyword scoring to surface profit-impacting insights that previously required hours of manual analyst review.',
         },
         {
-          headline: 'Resolved critical architectural failures in the flagship Cost Estimation Platform',
+          headline: 'Resolved critical performance issues in the flagship Cost Estimation Platform',
           detail:
-            'Serving Havells, TVS, and Hero: eliminated memory leaks, restructured N+1 queries into optimised joins, and migrated the data-access layer to a fully async/await I/O architecture — delivering a 90% overall performance improvement.',
+            'Served Havells, TVS, and Hero by eliminating memory leaks, restructuring N+1 queries into optimized joins, and migrating the data-access layer to a fully async/await architecture — delivering a 90% overall performance improvement.',
         },
         {
-          headline: 'Scaled stable concurrent capacity from 3–4 to 25–30+ users per client',
+          headline: 'Scaled the platform to support 25–30+ concurrent users per client',
           detail:
-            'Reduced peak API response time by 70% through systematic profiling, connection pooling, and async I/O refactoring across the full backend stack.',
+            'Reduced peak API response time by 70% through systematic profiling, connection pooling, and async I/O refactoring across the backend stack.',
         },
       ],
     },

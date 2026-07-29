@@ -49,7 +49,7 @@ function App() {
           ]}
           tags={['Python', 'LangChain', 'LlamaIndex', 'FastAPI', 'ChromaDB', 'Docker', 'Streamlit']}
           accent="violet"
-          badge="Featured · Open Source"
+          badge="Featured · Resume Project"
           year="2026"
           metric={{ value: 'NDCG@10', label: 'evaluated retriever' }}
           github="https://github.com/droidrdee"
@@ -60,19 +60,19 @@ function App() {
 
         {/* Row 7 — Two project cards */}
         <ProjectCard
-          title="DCGPAC LLM Automation"
-          tagline="Production Conversational Automation"
-          desc="An LLM-driven conversational system that consolidates three enterprise workflows — purchase orders, approvals, inventory, and vendor communication — into a single chatbot interface."
+          title="DCGPAC Conversational Automation"
+          tagline="Enterprise Procurement & Approval Chatbot"
+          desc="A production LLM-driven conversational system that automates purchase orders, approval workflows, inventory queries, and vendor communication through a single chatbot interface across 3 enterprise workflows."
           highlights={[
-            'Intent classification + RAG context retrieval + multi-turn dialogue management',
-            'Event-driven workflow automation: webhooks, async schedulers, background workers',
-            'Compressed multi-step ops from hours → under 5 minutes',
+            'Intent classification + RAG-based context retrieval + multi-turn dialogue management',
+            'Event-driven workflow automation with webhooks, async schedulers, and background workers',
+            'Compressed multi-step operations from hours to under 5 minutes',
           ]}
           tags={['LLM', 'RAG', 'FastAPI', 'Async', 'Enterprise']}
           accent="cyan"
           badge="Production · Softude × DCGPAC"
           year="2025"
-          metric={{ value: '<5 min', label: 'operational SLA' }}
+          metric={{ value: '<5 min', label: 'workflow turnaround' }}
           delay={0.1}
           colSpan={2}
         />
@@ -99,11 +99,11 @@ function App() {
         <ProjectCard
           title="Cost Estimation Platform"
           tagline="Async-I/O Refactor for Havells · TVS · Hero"
-          desc="Resolved critical architectural failures in Softude's flagship Cost Estimation Platform serving three major enterprise manufacturers — turning a system that buckled at 4 concurrent users into one that runs steady at 30+."
+          desc="Resolved critical architectural failures in Softude's flagship Cost Estimation Platform serving three major enterprise manufacturers — turning a system that buckled at 4 concurrent users into one that runs steadily at 30+ users."
           highlights={[
             'Eliminated memory leaks via systematic profiling and connection pooling',
-            'Restructured N+1 queries into optimised joins with index tuning',
-            'Migrated data-access layer to fully async / await I/O architecture',
+            'Restructured N+1 queries into optimized joins with index tuning',
+            'Migrated the data-access layer to a fully async / await I/O architecture',
             '90% overall performance improvement · 70% reduction in peak API response time',
           ]}
           tags={['Django', 'FastAPI', 'Async I/O', 'PostgreSQL', 'Profiling']}

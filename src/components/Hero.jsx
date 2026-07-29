@@ -17,38 +17,37 @@ const Hero = () => {
             <span className="live-dot"></span>
             <span>Open to opportunities worldwide · Willing to relocate</span>
           </div>
-          <div className="version-tag">v2026.05</div>
+          <div className="version-tag">v2026.07</div>
         </div>
 
         <h1 className="hero-title">
-          Building <span className="text-gradient">production-grade</span>
+          Building <span className="text-gradient">production AI</span>
           <br />
-          AI &amp; Agentic systems<span className="cursor">_</span>
+          and agentic systems<span className="cursor">_</span>
         </h1>
 
         <p className="hero-sub">
-          I'm <strong>Deepak Rathore</strong> — an <strong>AI GenAI Engineer</strong> who ships
+          I'm <strong>Deepak Rathore</strong> — an <strong>AI/ML Engineer</strong> building
           <span className="inline-chip"><HiSparkles /> RAG pipelines</span>,
-          <span className="inline-chip"><HiSparkles /> multi-agent LLM systems</span>, and
-          <span className="inline-chip"><HiSparkles /> async backends</span>
-          that scale enterprise platforms for <strong>Havells</strong>, <strong>TVS</strong>, and <strong>Hero</strong>. Currently
-          architecting LLM-driven automation at <strong>Softude Infotech</strong>.
+          <span className="inline-chip"><HiSparkles /> LLM copilots</span>, and
+          <span className="inline-chip"><HiSparkles /> async enterprise backends</span>
+          that improve automation, search, and workflow efficiency for clients like <strong>Havells</strong>, <strong>TVS</strong>, and <strong>Hero</strong>. Currently delivering production-grade AI solutions at <strong>Softude Infotech</strong>.
         </p>
 
         <div className="hero-stats">
           <div className="hero-stat">
             <span className="stat-num text-gradient">90%</span>
-            <span className="stat-label">Perf improvement</span>
+            <span className="stat-label">Perf uplift</span>
           </div>
           <div className="divider" />
           <div className="hero-stat">
-            <span className="stat-num text-gradient">7×</span>
-            <span className="stat-label">User-capacity scale</span>
+            <span className="stat-num text-gradient">25–30+</span>
+            <span className="stat-label">Concurrent users</span>
           </div>
           <div className="divider" />
           <div className="hero-stat">
-            <span className="stat-num text-gradient">10k+</span>
-            <span className="stat-label">Daily txns shipped</span>
+            <span className="stat-num text-gradient">3</span>
+            <span className="stat-label">Enterprise workflows</span>
           </div>
         </div>
 
